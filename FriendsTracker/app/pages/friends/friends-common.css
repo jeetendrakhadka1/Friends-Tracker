@@ -1,0 +1,29 @@
+WrapLayout{
+background-image: url("res://mountain");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+ActionBar {
+    background-color:  #23419B;
+    color: white;
+}
+
+.fullName{
+    font-size: 18;
+   color: #23419B;
+    font-weight: bold;
+}
+.phone{
+    font-size: 12;
+    color: #23419B;
+    font-weight: bold;
+}
+.user-icon{   
+    margin-left: 20 ;
+    margin-right: 5;
+    height: 30;
+    color: black;
+    font-size: 18;
+}

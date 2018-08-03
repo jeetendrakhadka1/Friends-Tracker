@@ -1,0 +1,68 @@
+WrapLayout{
+background-image: url("res://mountain");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+ActionBar {
+    background-color:  #23419B;
+    color: white;
+}
+
+Button, TextField {
+    margin-left: 6;
+    margin-right: 6;
+    margin-bottom: 10;
+  }
+  
+  TextField {
+    padding: 12 6;
+    font-size: 15;
+  }
+  
+  Button{
+    height: 65;
+    color: white;
+  
+  }
+  .submit-button {
+    background-color: #27ae60;
+    margin-top: 20;
+  }
+  
+  .faq-button{
+    background-color: #4099ff;
+  }
+  
+  .login-entry-form{
+     margin-left: 30;
+     margin-right: 30;
+     margin-top: 20;
+  }
+  
+  .login-entry-form-icon{
+    margin-top:12;
+    color: black;
+  }
+  
+  .btn-outline{
+    color:black;
+    margin-bottom: 15;
+  }
+  
+  .hand-image{
+    height: 200;
+  }
+  
+  .extra-actions{
+    margin-top: 20;
+    margin-left: 20;
+    font-size: 15;
+    font-family: sans-serif;
+  }
+  
+  .icons-extra-actions{
+    color: black;
+    margin-top:3;
+  }
+  

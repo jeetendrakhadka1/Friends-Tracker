@@ -1,0 +1,44 @@
+WrapLayout{
+background-image: url("res://mountain");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+ActionBar {
+    background-color:  #23419B;
+    color: white;
+}
+.odd {
+    background-color: red;
+}
+
+.even {
+    background-color: #23419B;
+    
+}
+
+.notification-list{
+    margin-top: 5;
+    height: 30;
+    width: 100%;
+    color: white;
+    font-size: 18;
+    margin-left: 10;
+}
+.respondButton-Accept{
+    height: 40;
+    color:white;
+    font-size: 15;
+    background-color: green;
+}
+.respondButton-Reject{
+    height: 40;
+    color:white;
+    font-size:15;
+    background-color: red;
+}
+.respondButtons{
+    background-color: white;
+    width:100%;
+}

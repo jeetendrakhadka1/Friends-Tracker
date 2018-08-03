@@ -1,0 +1,26 @@
+<ActionBar title="Search">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="GoBack()"></NavigationButton>
+</ActionBar>
+<WrapLayout>
+    <ScrollView>
+        <StackLayout>
+            <GridLayout rows="*" columns="20, *" height="50">
+                <Label class="font-awesome login-entry-form-icon" text=" &#xf007;" row="0" col="0"></Label>
+                <TextField row="0" col="1" hint="Search using phone number" keyboardType="email" autocorrect="false" autocapitalizationType="none"
+                    [(ngModel)]="searchfriends.PhoneNumber"></TextField>
+            </GridLayout>
+            <Button text="Search" class="submit-button" (tap)="searchFriendsCall()"></Button>
+            <ActivityIndicator [busy]="isWorking" [visibility]="isWorking ? 'visible' : 'collapse'" row="1" horizontalAlignment="center"
+                verticalAlignment="center"></ActivityIndicator>
+            <StackLayout *ngIf="responseReceived">
+                <Image src="res://testwallpaper" stretch="none" horizontalAlignment="center" class="profile-image"></Image>
+                <Label text="{{fullname}}" horizontalAlignment="center" class="friend-name"></Label>
+                <label text="{{searchFriendsResponse.userName}}" horizontalAlignment="center" class="username"></label>
+                <label text="{{searchFriendsResponse.phoneNumber}}" horizontalAlignment="center" class="phone-number"></label>
+                <label *ngIf="searchFriendsResponse.friendhipStatus!=='Not Friends'" text="{{searchFriendsResponse.friendhipStatus}}" horizontalAlignment="center"
+                    class="status"></label>
+                <Button *ngIf="searchFriendsResponse.friendhipStatus==='Not Friends'" text="Add Friend" (tap)="addFriendCall()" class="submit-button"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</WrapLayout>
